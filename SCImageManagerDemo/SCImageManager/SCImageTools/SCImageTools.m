@@ -1,14 +1,14 @@
 //
-//  SCTools.m
+//  SCImageTools.m
 //  QCloudFRDemo
 //
 //  Created by Aevit on 15/9/9.
 //  Copyright (c) 2015年 Aevit. All rights reserved.
 //
 
-#import "SCTools.h"
+#import "SCImageTools.h"
 
-@implementation SCTools
+@implementation SCImageTools
 
 #pragma mark - ---------------UIViewController---------------
 /**

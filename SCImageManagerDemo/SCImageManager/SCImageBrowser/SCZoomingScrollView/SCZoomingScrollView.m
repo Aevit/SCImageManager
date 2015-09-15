@@ -7,7 +7,7 @@
 //
 
 #import "SCZoomingScrollView.h"
-#import "SCTools.h"
+#import "SCImageTools.h"
 
 #define SET_MIN_ZOOM_SCALE_TO_ONE 1
 
@@ -64,7 +64,7 @@ static CGFloat statusAndNavBarHeight;
     self.backgroundColor = [UIColor blackColor];
     
     statusAndNavBarHeight = 0;
-    UINavigationController *nav = (UINavigationController*)[SCTools getTopPresentedViewController];
+    UINavigationController *nav = (UINavigationController*)[SCImageTools getTopPresentedViewController];
     if (nav && [nav isKindOfClass:[UINavigationController class]]) {
         statusAndNavBarHeight = nav.navigationBar.frame.origin.y + nav.navigationBar.frame.size.height;
     }
@@ -162,7 +162,7 @@ static CGFloat statusAndNavBarHeight;
 // the code below is from https://github.com/mwaterfall/MWPhotoBrowser
 - (void)handleDoubleTap:(CGPoint)touchPoint {
     // Cancel any single tap handling
-    [NSObject cancelPreviousPerformRequestsWithTarget:[SCTools viewControllerOfView:self]];
+    [NSObject cancelPreviousPerformRequestsWithTarget:[SCImageTools viewControllerOfView:self]];
     
     // Zoom
     if (self.zoomScale != self.minimumZoomScale) {

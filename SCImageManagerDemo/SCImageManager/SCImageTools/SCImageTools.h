@@ -1,5 +1,5 @@
 //
-//  SCTools.h
+//  SCImageTools.h
 //  QCloudFRDemo
 //
 //  Created by Aevit on 15/9/9.
@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-@interface SCTools : NSObject
+@interface SCImageTools : NSObject
 
 #pragma mark - ---------------UIViewController---------------
 /**

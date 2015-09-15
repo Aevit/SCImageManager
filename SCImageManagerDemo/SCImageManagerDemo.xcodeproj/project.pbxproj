@@ -15,30 +15,31 @@
 		E104B6751BA86B57004832F0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E104B6741BA86B57004832F0 /* Images.xcassets */; };
 		E104B6781BA86B57004832F0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E104B6761BA86B57004832F0 /* LaunchScreen.xib */; };
 		E104B6841BA86B58004832F0 /* SCImageManagerDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E104B6831BA86B58004832F0 /* SCImageManagerDemoTests.m */; };
-		E104B6B91BA86BB0004832F0 /* SCImageBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = E104B6901BA86BB0004832F0 /* SCImageBrowser.m */; };
-		E104B6BA1BA86BB0004832F0 /* SCTapImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = E104B6931BA86BB0004832F0 /* SCTapImageView.m */; };
-		E104B6BB1BA86BB0004832F0 /* SCZoomingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = E104B6951BA86BB0004832F0 /* SCZoomingScrollView.m */; };
-		E104B6BC1BA86BB0004832F0 /* sc_album_down@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E104B6981BA86BB0004832F0 /* sc_album_down@2x.png */; };
-		E104B6BD1BA86BB0004832F0 /* sc_album_up@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E104B6991BA86BB0004832F0 /* sc_album_up@2x.png */; };
-		E104B6BE1BA86BB0004832F0 /* sc_back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E104B69A1BA86BB0004832F0 /* sc_back@2x.png */; };
-		E104B6BF1BA86BB0004832F0 /* sc_cam@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E104B69B1BA86BB0004832F0 /* sc_cam@2x.png */; };
-		E104B6C01BA86BB0004832F0 /* sc_cam_h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E104B69C1BA86BB0004832F0 /* sc_cam_h@2x.png */; };
-		E104B6C11BA86BB0004832F0 /* sc_close@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E104B69D1BA86BB0004832F0 /* sc_close@2x.png */; };
-		E104B6C21BA86BB0004832F0 /* sc_item_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E104B69E1BA86BB0004832F0 /* sc_item_bg@2x.png */; };
-		E104B6C31BA86BB0004832F0 /* sc_list@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E104B69F1BA86BB0004832F0 /* sc_list@2x.png */; };
-		E104B6C41BA86BB0004832F0 /* sc_photo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E104B6A01BA86BB0004832F0 /* sc_photo@2x.png */; };
-		E104B6C51BA86BB0004832F0 /* sc_photo_h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E104B6A11BA86BB0004832F0 /* sc_photo_h@2x.png */; };
-		E104B6C61BA86BB0004832F0 /* sc_sample@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E104B6A21BA86BB0004832F0 /* sc_sample@2x.png */; };
-		E104B6C71BA86BB0004832F0 /* sc_sample_h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E104B6A31BA86BB0004832F0 /* sc_sample_h@2x.png */; };
-		E104B6C81BA86BB0004832F0 /* SCAlbumCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E104B6A51BA86BB0004832F0 /* SCAlbumCell.m */; };
-		E104B6C91BA86BB0004832F0 /* SCImageNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = E104B6A71BA86BB0004832F0 /* SCImageNavigationController.m */; };
-		E104B6CA1BA86BB0004832F0 /* SCImagePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = E104B6A91BA86BB0004832F0 /* SCImagePickerController.m */; };
-		E104B6CB1BA86BB0004832F0 /* SCPhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E104B6AB1BA86BB0004832F0 /* SCPhotoCell.m */; };
-		E104B6CC1BA86BB0004832F0 /* SCTools.m in Sources */ = {isa = PBXBuildFile; fileRef = E104B6AE1BA86BB0004832F0 /* SCTools.m */; };
-		E104B6CD1BA86BB0004832F0 /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = E104B6B21BA86BB0004832F0 /* SVIndefiniteAnimatedView.m */; };
-		E104B6CE1BA86BB0004832F0 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E104B6B41BA86BB0004832F0 /* SVProgressHUD.bundle */; };
-		E104B6CF1BA86BB0004832F0 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = E104B6B61BA86BB0004832F0 /* SVProgressHUD.m */; };
-		E104B6D01BA86BB0004832F0 /* SVRadialGradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = E104B6B81BA86BB0004832F0 /* SVRadialGradientLayer.m */; };
+		E104B6D21BA86DBB004832F0 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E104B6D11BA86DBB004832F0 /* Photos.framework */; };
+		E104B6F51BA86E25004832F0 /* SCImageBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = E104B6D61BA86E25004832F0 /* SCImageBrowser.m */; };
+		E104B6F61BA86E25004832F0 /* SCTapImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = E104B6D91BA86E25004832F0 /* SCTapImageView.m */; };
+		E104B6F71BA86E25004832F0 /* SCZoomingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = E104B6DB1BA86E25004832F0 /* SCZoomingScrollView.m */; };
+		E104B6F81BA86E25004832F0 /* sc_album_down@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E104B6DE1BA86E25004832F0 /* sc_album_down@2x.png */; };
+		E104B6F91BA86E25004832F0 /* sc_album_up@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E104B6DF1BA86E25004832F0 /* sc_album_up@2x.png */; };
+		E104B6FA1BA86E25004832F0 /* sc_back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E104B6E01BA86E25004832F0 /* sc_back@2x.png */; };
+		E104B6FB1BA86E25004832F0 /* sc_cam@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E104B6E11BA86E25004832F0 /* sc_cam@2x.png */; };
+		E104B6FC1BA86E25004832F0 /* sc_cam_h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E104B6E21BA86E25004832F0 /* sc_cam_h@2x.png */; };
+		E104B6FD1BA86E25004832F0 /* sc_close@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E104B6E31BA86E25004832F0 /* sc_close@2x.png */; };
+		E104B6FE1BA86E25004832F0 /* sc_item_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E104B6E41BA86E25004832F0 /* sc_item_bg@2x.png */; };
+		E104B6FF1BA86E25004832F0 /* sc_list@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E104B6E51BA86E25004832F0 /* sc_list@2x.png */; };
+		E104B7001BA86E25004832F0 /* sc_photo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E104B6E61BA86E25004832F0 /* sc_photo@2x.png */; };
+		E104B7011BA86E25004832F0 /* sc_photo_h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E104B6E71BA86E25004832F0 /* sc_photo_h@2x.png */; };
+		E104B7021BA86E25004832F0 /* sc_sample@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E104B6E81BA86E25004832F0 /* sc_sample@2x.png */; };
+		E104B7031BA86E25004832F0 /* sc_sample_h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E104B6E91BA86E25004832F0 /* sc_sample_h@2x.png */; };
+		E104B7041BA86E25004832F0 /* SCAlbumCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E104B6EB1BA86E25004832F0 /* SCAlbumCell.m */; };
+		E104B7051BA86E25004832F0 /* SCImageNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = E104B6ED1BA86E25004832F0 /* SCImageNavigationController.m */; };
+		E104B7061BA86E25004832F0 /* SCImagePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = E104B6EF1BA86E25004832F0 /* SCImagePickerController.m */; };
+		E104B7071BA86E25004832F0 /* SCPhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E104B6F11BA86E25004832F0 /* SCPhotoCell.m */; };
+		E104B7131BA86E31004832F0 /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = E104B70C1BA86E31004832F0 /* SVIndefiniteAnimatedView.m */; };
+		E104B7141BA86E31004832F0 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E104B70E1BA86E31004832F0 /* SVProgressHUD.bundle */; };
+		E104B7151BA86E31004832F0 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = E104B7101BA86E31004832F0 /* SVProgressHUD.m */; };
+		E104B7161BA86E31004832F0 /* SVRadialGradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = E104B7121BA86E31004832F0 /* SVRadialGradientLayer.m */; };
+		E104B71A1BA86E78004832F0 /* SCImageTools.m in Sources */ = {isa = PBXBuildFile; fileRef = E104B7191BA86E78004832F0 /* SCImageTools.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,42 +67,43 @@
 		E104B67D1BA86B58004832F0 /* SCImageManagerDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SCImageManagerDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E104B6821BA86B58004832F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E104B6831BA86B58004832F0 /* SCImageManagerDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCImageManagerDemoTests.m; sourceTree = "<group>"; };
-		E104B68F1BA86BB0004832F0 /* SCImageBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCImageBrowser.h; sourceTree = "<group>"; };
-		E104B6901BA86BB0004832F0 /* SCImageBrowser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCImageBrowser.m; sourceTree = "<group>"; };
-		E104B6921BA86BB0004832F0 /* SCTapImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCTapImageView.h; sourceTree = "<group>"; };
-		E104B6931BA86BB0004832F0 /* SCTapImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCTapImageView.m; sourceTree = "<group>"; };
-		E104B6941BA86BB0004832F0 /* SCZoomingScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCZoomingScrollView.h; sourceTree = "<group>"; };
-		E104B6951BA86BB0004832F0 /* SCZoomingScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCZoomingScrollView.m; sourceTree = "<group>"; };
-		E104B6981BA86BB0004832F0 /* sc_album_down@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sc_album_down@2x.png"; sourceTree = "<group>"; };
-		E104B6991BA86BB0004832F0 /* sc_album_up@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sc_album_up@2x.png"; sourceTree = "<group>"; };
-		E104B69A1BA86BB0004832F0 /* sc_back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sc_back@2x.png"; sourceTree = "<group>"; };
-		E104B69B1BA86BB0004832F0 /* sc_cam@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sc_cam@2x.png"; sourceTree = "<group>"; };
-		E104B69C1BA86BB0004832F0 /* sc_cam_h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sc_cam_h@2x.png"; sourceTree = "<group>"; };
-		E104B69D1BA86BB0004832F0 /* sc_close@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sc_close@2x.png"; sourceTree = "<group>"; };
-		E104B69E1BA86BB0004832F0 /* sc_item_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sc_item_bg@2x.png"; sourceTree = "<group>"; };
-		E104B69F1BA86BB0004832F0 /* sc_list@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sc_list@2x.png"; sourceTree = "<group>"; };
-		E104B6A01BA86BB0004832F0 /* sc_photo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sc_photo@2x.png"; sourceTree = "<group>"; };
-		E104B6A11BA86BB0004832F0 /* sc_photo_h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sc_photo_h@2x.png"; sourceTree = "<group>"; };
-		E104B6A21BA86BB0004832F0 /* sc_sample@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sc_sample@2x.png"; sourceTree = "<group>"; };
-		E104B6A31BA86BB0004832F0 /* sc_sample_h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sc_sample_h@2x.png"; sourceTree = "<group>"; };
-		E104B6A41BA86BB0004832F0 /* SCAlbumCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCAlbumCell.h; sourceTree = "<group>"; };
-		E104B6A51BA86BB0004832F0 /* SCAlbumCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCAlbumCell.m; sourceTree = "<group>"; };
-		E104B6A61BA86BB0004832F0 /* SCImageNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCImageNavigationController.h; sourceTree = "<group>"; };
-		E104B6A71BA86BB0004832F0 /* SCImageNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCImageNavigationController.m; sourceTree = "<group>"; };
-		E104B6A81BA86BB0004832F0 /* SCImagePickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCImagePickerController.h; sourceTree = "<group>"; };
-		E104B6A91BA86BB0004832F0 /* SCImagePickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCImagePickerController.m; sourceTree = "<group>"; };
-		E104B6AA1BA86BB0004832F0 /* SCPhotoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCPhotoCell.h; sourceTree = "<group>"; };
-		E104B6AB1BA86BB0004832F0 /* SCPhotoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCPhotoCell.m; sourceTree = "<group>"; };
-		E104B6AD1BA86BB0004832F0 /* SCTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCTools.h; sourceTree = "<group>"; };
-		E104B6AE1BA86BB0004832F0 /* SCTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCTools.m; sourceTree = "<group>"; };
-		E104B6B11BA86BB0004832F0 /* SVIndefiniteAnimatedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVIndefiniteAnimatedView.h; sourceTree = "<group>"; };
-		E104B6B21BA86BB0004832F0 /* SVIndefiniteAnimatedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVIndefiniteAnimatedView.m; sourceTree = "<group>"; };
-		E104B6B31BA86BB0004832F0 /* SVProgressHUD-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-Prefix.pch"; sourceTree = "<group>"; };
-		E104B6B41BA86BB0004832F0 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
-		E104B6B51BA86BB0004832F0 /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
-		E104B6B61BA86BB0004832F0 /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
-		E104B6B71BA86BB0004832F0 /* SVRadialGradientLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVRadialGradientLayer.h; sourceTree = "<group>"; };
-		E104B6B81BA86BB0004832F0 /* SVRadialGradientLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVRadialGradientLayer.m; sourceTree = "<group>"; };
+		E104B6D11BA86DBB004832F0 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
+		E104B6D51BA86E25004832F0 /* SCImageBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCImageBrowser.h; sourceTree = "<group>"; };
+		E104B6D61BA86E25004832F0 /* SCImageBrowser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCImageBrowser.m; sourceTree = "<group>"; };
+		E104B6D81BA86E25004832F0 /* SCTapImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCTapImageView.h; sourceTree = "<group>"; };
+		E104B6D91BA86E25004832F0 /* SCTapImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCTapImageView.m; sourceTree = "<group>"; };
+		E104B6DA1BA86E25004832F0 /* SCZoomingScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCZoomingScrollView.h; sourceTree = "<group>"; };
+		E104B6DB1BA86E25004832F0 /* SCZoomingScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCZoomingScrollView.m; sourceTree = "<group>"; };
+		E104B6DE1BA86E25004832F0 /* sc_album_down@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sc_album_down@2x.png"; sourceTree = "<group>"; };
+		E104B6DF1BA86E25004832F0 /* sc_album_up@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sc_album_up@2x.png"; sourceTree = "<group>"; };
+		E104B6E01BA86E25004832F0 /* sc_back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sc_back@2x.png"; sourceTree = "<group>"; };
+		E104B6E11BA86E25004832F0 /* sc_cam@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sc_cam@2x.png"; sourceTree = "<group>"; };
+		E104B6E21BA86E25004832F0 /* sc_cam_h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sc_cam_h@2x.png"; sourceTree = "<group>"; };
+		E104B6E31BA86E25004832F0 /* sc_close@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sc_close@2x.png"; sourceTree = "<group>"; };
+		E104B6E41BA86E25004832F0 /* sc_item_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sc_item_bg@2x.png"; sourceTree = "<group>"; };
+		E104B6E51BA86E25004832F0 /* sc_list@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sc_list@2x.png"; sourceTree = "<group>"; };
+		E104B6E61BA86E25004832F0 /* sc_photo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sc_photo@2x.png"; sourceTree = "<group>"; };
+		E104B6E71BA86E25004832F0 /* sc_photo_h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sc_photo_h@2x.png"; sourceTree = "<group>"; };
+		E104B6E81BA86E25004832F0 /* sc_sample@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sc_sample@2x.png"; sourceTree = "<group>"; };
+		E104B6E91BA86E25004832F0 /* sc_sample_h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sc_sample_h@2x.png"; sourceTree = "<group>"; };
+		E104B6EA1BA86E25004832F0 /* SCAlbumCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCAlbumCell.h; sourceTree = "<group>"; };
+		E104B6EB1BA86E25004832F0 /* SCAlbumCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCAlbumCell.m; sourceTree = "<group>"; };
+		E104B6EC1BA86E25004832F0 /* SCImageNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCImageNavigationController.h; sourceTree = "<group>"; };
+		E104B6ED1BA86E25004832F0 /* SCImageNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCImageNavigationController.m; sourceTree = "<group>"; };
+		E104B6EE1BA86E25004832F0 /* SCImagePickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCImagePickerController.h; sourceTree = "<group>"; };
+		E104B6EF1BA86E25004832F0 /* SCImagePickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCImagePickerController.m; sourceTree = "<group>"; };
+		E104B6F01BA86E25004832F0 /* SCPhotoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCPhotoCell.h; sourceTree = "<group>"; };
+		E104B6F11BA86E25004832F0 /* SCPhotoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCPhotoCell.m; sourceTree = "<group>"; };
+		E104B70B1BA86E31004832F0 /* SVIndefiniteAnimatedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVIndefiniteAnimatedView.h; sourceTree = "<group>"; };
+		E104B70C1BA86E31004832F0 /* SVIndefiniteAnimatedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVIndefiniteAnimatedView.m; sourceTree = "<group>"; };
+		E104B70D1BA86E31004832F0 /* SVProgressHUD-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-Prefix.pch"; sourceTree = "<group>"; };
+		E104B70E1BA86E31004832F0 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
+		E104B70F1BA86E31004832F0 /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
+		E104B7101BA86E31004832F0 /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
+		E104B7111BA86E31004832F0 /* SVRadialGradientLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVRadialGradientLayer.h; sourceTree = "<group>"; };
+		E104B7121BA86E31004832F0 /* SVRadialGradientLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVRadialGradientLayer.m; sourceTree = "<group>"; };
+		E104B7181BA86E78004832F0 /* SCImageTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCImageTools.h; sourceTree = "<group>"; };
+		E104B7191BA86E78004832F0 /* SCImageTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCImageTools.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E104B6D21BA86DBB004832F0 /* Photos.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,6 +128,7 @@
 		E104B6581BA86B57004832F0 = {
 			isa = PBXGroup;
 			children = (
+				E104B6D11BA86DBB004832F0 /* Photos.framework */,
 				E104B6631BA86B57004832F0 /* SCImageManagerDemo */,
 				E104B6801BA86B58004832F0 /* SCImageManagerDemoTests */,
 				E104B6621BA86B57004832F0 /* Products */,
@@ -143,8 +147,8 @@
 		E104B6631BA86B57004832F0 /* SCImageManagerDemo */ = {
 			isa = PBXGroup;
 			children = (
-				E104B68D1BA86BB0004832F0 /* SCImageManager */,
-				E104B6AF1BA86BB0004832F0 /* Vendor */,
+				E104B7091BA86E31004832F0 /* Vendor */,
+				E104B6D31BA86E25004832F0 /* SCImageManager */,
 				E104B6681BA86B57004832F0 /* AppDelegate.h */,
 				E104B6691BA86B57004832F0 /* AppDelegate.m */,
 				E104B66E1BA86B57004832F0 /* ViewController.h */,
@@ -184,104 +188,102 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		E104B68D1BA86BB0004832F0 /* SCImageManager */ = {
+		E104B6D31BA86E25004832F0 /* SCImageManager */ = {
 			isa = PBXGroup;
 			children = (
-				E104B68E1BA86BB0004832F0 /* SCImageBrowser */,
-				E104B6961BA86BB0004832F0 /* SCImagePickerController */,
-				E104B6AC1BA86BB0004832F0 /* SCImageTools */,
+				E104B7171BA86E78004832F0 /* SCImageTools */,
+				E104B6D41BA86E25004832F0 /* SCImageBrowser */,
+				E104B6DC1BA86E25004832F0 /* SCImagePickerController */,
 			);
-			name = SCImageManager;
-			path = ../../../SCImagePickerControllerDemo/SCImagePickerControllerDemo/SCImageManager;
-			sourceTree = "<group>";
+			path = SCImageManager;
+			sourceTree = SOURCE_ROOT;
 		};
-		E104B68E1BA86BB0004832F0 /* SCImageBrowser */ = {
+		E104B6D41BA86E25004832F0 /* SCImageBrowser */ = {
 			isa = PBXGroup;
 			children = (
-				E104B68F1BA86BB0004832F0 /* SCImageBrowser.h */,
-				E104B6901BA86BB0004832F0 /* SCImageBrowser.m */,
-				E104B6911BA86BB0004832F0 /* SCZoomingScrollView */,
+				E104B6D51BA86E25004832F0 /* SCImageBrowser.h */,
+				E104B6D61BA86E25004832F0 /* SCImageBrowser.m */,
+				E104B6D71BA86E25004832F0 /* SCZoomingScrollView */,
 			);
 			path = SCImageBrowser;
 			sourceTree = "<group>";
 		};
-		E104B6911BA86BB0004832F0 /* SCZoomingScrollView */ = {
+		E104B6D71BA86E25004832F0 /* SCZoomingScrollView */ = {
 			isa = PBXGroup;
 			children = (
-				E104B6921BA86BB0004832F0 /* SCTapImageView.h */,
-				E104B6931BA86BB0004832F0 /* SCTapImageView.m */,
-				E104B6941BA86BB0004832F0 /* SCZoomingScrollView.h */,
-				E104B6951BA86BB0004832F0 /* SCZoomingScrollView.m */,
+				E104B6D81BA86E25004832F0 /* SCTapImageView.h */,
+				E104B6D91BA86E25004832F0 /* SCTapImageView.m */,
+				E104B6DA1BA86E25004832F0 /* SCZoomingScrollView.h */,
+				E104B6DB1BA86E25004832F0 /* SCZoomingScrollView.m */,
 			);
 			path = SCZoomingScrollView;
 			sourceTree = "<group>";
 		};
-		E104B6961BA86BB0004832F0 /* SCImagePickerController */ = {
+		E104B6DC1BA86E25004832F0 /* SCImagePickerController */ = {
 			isa = PBXGroup;
 			children = (
-				E104B6971BA86BB0004832F0 /* images */,
-				E104B6A41BA86BB0004832F0 /* SCAlbumCell.h */,
-				E104B6A51BA86BB0004832F0 /* SCAlbumCell.m */,
-				E104B6A61BA86BB0004832F0 /* SCImageNavigationController.h */,
-				E104B6A71BA86BB0004832F0 /* SCImageNavigationController.m */,
-				E104B6A81BA86BB0004832F0 /* SCImagePickerController.h */,
-				E104B6A91BA86BB0004832F0 /* SCImagePickerController.m */,
-				E104B6AA1BA86BB0004832F0 /* SCPhotoCell.h */,
-				E104B6AB1BA86BB0004832F0 /* SCPhotoCell.m */,
+				E104B6DD1BA86E25004832F0 /* images */,
+				E104B6EA1BA86E25004832F0 /* SCAlbumCell.h */,
+				E104B6EB1BA86E25004832F0 /* SCAlbumCell.m */,
+				E104B6EC1BA86E25004832F0 /* SCImageNavigationController.h */,
+				E104B6ED1BA86E25004832F0 /* SCImageNavigationController.m */,
+				E104B6EE1BA86E25004832F0 /* SCImagePickerController.h */,
+				E104B6EF1BA86E25004832F0 /* SCImagePickerController.m */,
+				E104B6F01BA86E25004832F0 /* SCPhotoCell.h */,
+				E104B6F11BA86E25004832F0 /* SCPhotoCell.m */,
 			);
 			path = SCImagePickerController;
 			sourceTree = "<group>";
 		};
-		E104B6971BA86BB0004832F0 /* images */ = {
+		E104B6DD1BA86E25004832F0 /* images */ = {
 			isa = PBXGroup;
 			children = (
-				E104B6981BA86BB0004832F0 /* sc_album_down@2x.png */,
-				E104B6991BA86BB0004832F0 /* sc_album_up@2x.png */,
-				E104B69A1BA86BB0004832F0 /* sc_back@2x.png */,
-				E104B69B1BA86BB0004832F0 /* sc_cam@2x.png */,
-				E104B69C1BA86BB0004832F0 /* sc_cam_h@2x.png */,
-				E104B69D1BA86BB0004832F0 /* sc_close@2x.png */,
-				E104B69E1BA86BB0004832F0 /* sc_item_bg@2x.png */,
-				E104B69F1BA86BB0004832F0 /* sc_list@2x.png */,
-				E104B6A01BA86BB0004832F0 /* sc_photo@2x.png */,
-				E104B6A11BA86BB0004832F0 /* sc_photo_h@2x.png */,
-				E104B6A21BA86BB0004832F0 /* sc_sample@2x.png */,
-				E104B6A31BA86BB0004832F0 /* sc_sample_h@2x.png */,
+				E104B6DE1BA86E25004832F0 /* sc_album_down@2x.png */,
+				E104B6DF1BA86E25004832F0 /* sc_album_up@2x.png */,
+				E104B6E01BA86E25004832F0 /* sc_back@2x.png */,
+				E104B6E11BA86E25004832F0 /* sc_cam@2x.png */,
+				E104B6E21BA86E25004832F0 /* sc_cam_h@2x.png */,
+				E104B6E31BA86E25004832F0 /* sc_close@2x.png */,
+				E104B6E41BA86E25004832F0 /* sc_item_bg@2x.png */,
+				E104B6E51BA86E25004832F0 /* sc_list@2x.png */,
+				E104B6E61BA86E25004832F0 /* sc_photo@2x.png */,
+				E104B6E71BA86E25004832F0 /* sc_photo_h@2x.png */,
+				E104B6E81BA86E25004832F0 /* sc_sample@2x.png */,
+				E104B6E91BA86E25004832F0 /* sc_sample_h@2x.png */,
 			);
 			path = images;
 			sourceTree = "<group>";
 		};
-		E104B6AC1BA86BB0004832F0 /* SCImageTools */ = {
+		E104B7091BA86E31004832F0 /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
-				E104B6AD1BA86BB0004832F0 /* SCTools.h */,
-				E104B6AE1BA86BB0004832F0 /* SCTools.m */,
+				E104B70A1BA86E31004832F0 /* SVProgressHUD */,
 			);
-			path = SCImageTools;
-			sourceTree = "<group>";
+			path = Vendor;
+			sourceTree = SOURCE_ROOT;
 		};
-		E104B6AF1BA86BB0004832F0 /* Vendor */ = {
+		E104B70A1BA86E31004832F0 /* SVProgressHUD */ = {
 			isa = PBXGroup;
 			children = (
-				E104B6B01BA86BB0004832F0 /* SVProgressHUD */,
-			);
-			name = Vendor;
-			path = ../../../SCImagePickerControllerDemo/SCImagePickerControllerDemo/Vendor;
-			sourceTree = "<group>";
-		};
-		E104B6B01BA86BB0004832F0 /* SVProgressHUD */ = {
-			isa = PBXGroup;
-			children = (
-				E104B6B11BA86BB0004832F0 /* SVIndefiniteAnimatedView.h */,
-				E104B6B21BA86BB0004832F0 /* SVIndefiniteAnimatedView.m */,
-				E104B6B31BA86BB0004832F0 /* SVProgressHUD-Prefix.pch */,
-				E104B6B41BA86BB0004832F0 /* SVProgressHUD.bundle */,
-				E104B6B51BA86BB0004832F0 /* SVProgressHUD.h */,
-				E104B6B61BA86BB0004832F0 /* SVProgressHUD.m */,
-				E104B6B71BA86BB0004832F0 /* SVRadialGradientLayer.h */,
-				E104B6B81BA86BB0004832F0 /* SVRadialGradientLayer.m */,
+				E104B70B1BA86E31004832F0 /* SVIndefiniteAnimatedView.h */,
+				E104B70C1BA86E31004832F0 /* SVIndefiniteAnimatedView.m */,
+				E104B70D1BA86E31004832F0 /* SVProgressHUD-Prefix.pch */,
+				E104B70E1BA86E31004832F0 /* SVProgressHUD.bundle */,
+				E104B70F1BA86E31004832F0 /* SVProgressHUD.h */,
+				E104B7101BA86E31004832F0 /* SVProgressHUD.m */,
+				E104B7111BA86E31004832F0 /* SVRadialGradientLayer.h */,
+				E104B7121BA86E31004832F0 /* SVRadialGradientLayer.m */,
 			);
 			path = SVProgressHUD;
+			sourceTree = "<group>";
+		};
+		E104B7171BA86E78004832F0 /* SCImageTools */ = {
+			isa = PBXGroup;
+			children = (
+				E104B7181BA86E78004832F0 /* SCImageTools.h */,
+				E104B7191BA86E78004832F0 /* SCImageTools.m */,
+			);
+			path = SCImageTools;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -364,22 +366,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E104B6BF1BA86BB0004832F0 /* sc_cam@2x.png in Resources */,
-				E104B6C01BA86BB0004832F0 /* sc_cam_h@2x.png in Resources */,
-				E104B6C61BA86BB0004832F0 /* sc_sample@2x.png in Resources */,
-				E104B6C21BA86BB0004832F0 /* sc_item_bg@2x.png in Resources */,
-				E104B6C41BA86BB0004832F0 /* sc_photo@2x.png in Resources */,
+				E104B7001BA86E25004832F0 /* sc_photo@2x.png in Resources */,
+				E104B6FB1BA86E25004832F0 /* sc_cam@2x.png in Resources */,
+				E104B6FD1BA86E25004832F0 /* sc_close@2x.png in Resources */,
 				E104B6731BA86B57004832F0 /* Main.storyboard in Resources */,
-				E104B6BD1BA86BB0004832F0 /* sc_album_up@2x.png in Resources */,
+				E104B6FC1BA86E25004832F0 /* sc_cam_h@2x.png in Resources */,
+				E104B6FF1BA86E25004832F0 /* sc_list@2x.png in Resources */,
+				E104B6F91BA86E25004832F0 /* sc_album_up@2x.png in Resources */,
+				E104B6FA1BA86E25004832F0 /* sc_back@2x.png in Resources */,
+				E104B7021BA86E25004832F0 /* sc_sample@2x.png in Resources */,
 				E104B6781BA86B57004832F0 /* LaunchScreen.xib in Resources */,
-				E104B6BE1BA86BB0004832F0 /* sc_back@2x.png in Resources */,
-				E104B6BC1BA86BB0004832F0 /* sc_album_down@2x.png in Resources */,
-				E104B6C31BA86BB0004832F0 /* sc_list@2x.png in Resources */,
-				E104B6CE1BA86BB0004832F0 /* SVProgressHUD.bundle in Resources */,
-				E104B6C71BA86BB0004832F0 /* sc_sample_h@2x.png in Resources */,
+				E104B6F81BA86E25004832F0 /* sc_album_down@2x.png in Resources */,
+				E104B7141BA86E31004832F0 /* SVProgressHUD.bundle in Resources */,
+				E104B7011BA86E25004832F0 /* sc_photo_h@2x.png in Resources */,
+				E104B6FE1BA86E25004832F0 /* sc_item_bg@2x.png in Resources */,
+				E104B7031BA86E25004832F0 /* sc_sample_h@2x.png in Resources */,
 				E104B6751BA86B57004832F0 /* Images.xcassets in Resources */,
-				E104B6C11BA86BB0004832F0 /* sc_close@2x.png in Resources */,
-				E104B6C51BA86BB0004832F0 /* sc_photo_h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,21 +399,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E104B6BB1BA86BB0004832F0 /* SCZoomingScrollView.m in Sources */,
-				E104B6CD1BA86BB0004832F0 /* SVIndefiniteAnimatedView.m in Sources */,
-				E104B6BA1BA86BB0004832F0 /* SCTapImageView.m in Sources */,
-				E104B6CF1BA86BB0004832F0 /* SVProgressHUD.m in Sources */,
-				E104B6D01BA86BB0004832F0 /* SVRadialGradientLayer.m in Sources */,
+				E104B6F51BA86E25004832F0 /* SCImageBrowser.m in Sources */,
+				E104B7131BA86E31004832F0 /* SVIndefiniteAnimatedView.m in Sources */,
+				E104B7071BA86E25004832F0 /* SCPhotoCell.m in Sources */,
+				E104B7151BA86E31004832F0 /* SVProgressHUD.m in Sources */,
+				E104B7161BA86E31004832F0 /* SVRadialGradientLayer.m in Sources */,
+				E104B71A1BA86E78004832F0 /* SCImageTools.m in Sources */,
+				E104B6F61BA86E25004832F0 /* SCTapImageView.m in Sources */,
+				E104B7041BA86E25004832F0 /* SCAlbumCell.m in Sources */,
+				E104B7051BA86E25004832F0 /* SCImageNavigationController.m in Sources */,
 				E104B66D1BA86B57004832F0 /* SCImageManagerDemo.xcdatamodeld in Sources */,
-				E104B6CA1BA86BB0004832F0 /* SCImagePickerController.m in Sources */,
-				E104B6B91BA86BB0004832F0 /* SCImageBrowser.m in Sources */,
 				E104B66A1BA86B57004832F0 /* AppDelegate.m in Sources */,
+				E104B7061BA86E25004832F0 /* SCImagePickerController.m in Sources */,
+				E104B6F71BA86E25004832F0 /* SCZoomingScrollView.m in Sources */,
 				E104B6701BA86B57004832F0 /* ViewController.m in Sources */,
-				E104B6CC1BA86BB0004832F0 /* SCTools.m in Sources */,
 				E104B6671BA86B57004832F0 /* main.m in Sources */,
-				E104B6C81BA86BB0004832F0 /* SCAlbumCell.m in Sources */,
-				E104B6C91BA86BB0004832F0 /* SCImageNavigationController.m in Sources */,
-				E104B6CB1BA86BB0004832F0 /* SCPhotoCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -608,6 +610,7 @@
 				E104B6891BA86B58004832F0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E104B68A1BA86B58004832F0 /* Build configuration list for PBXNativeTarget "SCImageManagerDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -616,6 +619,7 @@
 				E104B68C1BA86B58004832F0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
