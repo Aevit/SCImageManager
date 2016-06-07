@@ -13,12 +13,14 @@
 
 @protocol SCImagePickerDelegate <NSObject>
 @optional
-- (void)scImagePicker:(SCImagePickerController*)picker didSelectAImage:(UIImage*)aImage;
+- (void)scImagePicker:(SCImagePickerController*)picker didSelectAImage:(UIImage*)aImage info:(id)info;
+- (UIImage*)scImagePicker:(SCImagePickerController*)picker itemForIndexPath:(NSIndexPath*)indexPath;
 
 @end
 
 @interface SCImagePickerController : UIViewController
 
+@property (nonatomic, assign) BOOL showCameraOnFirstItem;
 
 @property (nonatomic, weak) IBOutlet id<SCImagePickerDelegate> delegate;
 

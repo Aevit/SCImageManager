@@ -22,7 +22,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     UIButton *aBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    aBtn.frame = CGRectMake(0, 0, 80, 40);
+    aBtn.frame = CGRectMake(0, 0, 200, 100);
     aBtn.center = self.view.center;
     [aBtn setTitle:@"click" forState:UIControlStateNormal];
     [aBtn setTitleColor:[UIColor darkGrayColor] forState:UIControlStateNormal];
@@ -32,6 +32,7 @@
 
 - (void)clickBtnPressed:(id)sender {
     SCImageNavigationController *nav = [[SCImageNavigationController alloc] initWithSCImagePickerControllerDelegate:self];
+//    nav.pickerController.showCameraOnFirstItem = NO;
     [self presentViewController:nav animated:YES completion:nil];
     self.imagePickerNav = nav;
 }
@@ -42,7 +43,7 @@
 }
 
 #pragma mark - image picker delegate
-- (void)scImagePicker:(SCImagePickerController *)picker didSelectAImage:(UIImage *)aImage {
+- (void)scImagePicker:(SCImagePickerController *)picker didSelectAImage:(UIImage *)aImage info:(id)info {
     SCImageBrowser *browser = [[SCImageBrowser alloc] init];
     browser.image = aImage;
     [self.imagePickerNav pushViewController:browser animated:YES];

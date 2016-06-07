@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "SCZoomingScrollView.h"
+#import <Photos/Photos.h>
 
 @interface SCImageBrowser : UIViewController
 

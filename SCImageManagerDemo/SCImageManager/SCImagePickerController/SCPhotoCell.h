@@ -13,6 +13,6 @@
 
 @property (nonatomic, weak) UIButton *picBtn;
 
-- (void)fillDataWithAsset:(PHAsset*)asset;
+- (void)fillData:(id)info;
 
 @end

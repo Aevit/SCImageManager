@@ -9,7 +9,7 @@
 #import "SCImageNavigationController.h"
 
 @interface SCImageNavigationController () {
-    
+    BOOL _hasCommonInit;
     UIStatusBarStyle _preStatusBarStyle;
     UIColor *_preTintColor;
 }
@@ -46,6 +46,10 @@
 }
 
 - (void)commonInit {
+    if (_hasCommonInit) {
+        return;
+    }
+    _hasCommonInit = YES;
     self.navigationBar.barTintColor = [UIColor colorWithRed:20 / 255.0 green:20 / 255.0 blue:20 / 255.0 alpha:1];
     self.navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName: [UIColor whiteColor]};
     

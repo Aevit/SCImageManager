@@ -71,6 +71,18 @@ static NSString *albumCellId = @"albumCellId";
     }
     _currAlbumIndex = 0;
     _cameraRollAlbumIndex = -1;
+    _showCameraOnFirstItem = YES;
+}
+
+- (void)dealloc {
+    if (_assets) {
+        [_assets removeAllObjects];
+        self.assets = nil;
+    }
+    if (_albumsArr) {
+        [_albumsArr removeAllObjects];
+        self.albumsArr = nil;
+    }
 }
 
 #pragma mark - View Loading
@@ -86,7 +98,7 @@ static NSString *albumCellId = @"albumCellId";
     [self addCollectionView];
 //    [self addBottomView];
     
-    [self willLoadFromAlbum];
+    [self checkAlbumPermissions];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -125,11 +137,7 @@ static NSString *albumCellId = @"albumCellId";
 
 - (void)buildAlbumTableAndData {
     if (!_tableView) {
-#if LOAD_ALBUMS_IN_VIEWDIDLOAD
-        CGFloat tableY = self.navigationController.navigationBar.frame.origin.y + self.navigationController.navigationBar.frame.size.height + [UIApplication sharedApplication].statusBarFrame.size.height;
-#else
-        CGFloat tableY = self.navigationController.navigationBar.frame.origin.y + self.navigationController.navigationBar.frame.size.height;
-#endif
+        CGFloat tableY = self.navigationController.navigationBar.frame.size.height + [UIApplication sharedApplication].statusBarFrame.size.height;
         UITableView *aTable = [[UITableView alloc] initWithFrame:CGRectMake(0, tableY, self.view.frame.size.width, 0) style:UITableViewStylePlain];
         aTable.backgroundColor = [UIColor whiteColor];
         aTable.delegate = self;
@@ -273,7 +281,7 @@ static NSString *albumCellId = @"albumCellId";
 }
 
 #pragma mark - Album
-- (void)willLoadFromAlbum {
+- (void)checkAlbumPermissions {
     
     // Check library permissions
     PHAuthorizationStatus status = [PHPhotoLibrary authorizationStatus];
@@ -313,7 +321,7 @@ static NSString *albumCellId = @"albumCellId";
         self.title = [self formatAlbumTitle:collection.localizedTitle indexRow:_currAlbumIndex];
     }
     
-    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+//    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         PHFetchOptions *options = [PHFetchOptions new];
         options.sortDescriptors = @[[NSSortDescriptor sortDescriptorWithKey:@"creationDate" ascending:NO]];
         PHFetchResult *fetchResults = nil;
@@ -329,10 +337,10 @@ static NSString *albumCellId = @"albumCellId";
             [_assets addObject:obj];
         }];
         
-//        if (fetchResults.count > 0) {
-            [_photoCollectionView performSelectorOnMainThread:@selector(reloadData) withObject:nil waitUntilDone:NO];
-//        }
-    });
+//        dispatch_async(dispatch_get_main_queue(), ^{
+            [_photoCollectionView reloadData];
+//        });
+//    });
 }
 
 - (void)loadAlbums {
@@ -387,19 +395,24 @@ static NSString *albumCellId = @"albumCellId";
 
 #pragma mark - UICollectionView
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    return [_assets count] + 1;
+    return [_assets count] + (_showCameraOnFirstItem ? 1 : 0);
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     SCPhotoCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:assetCellId forIndexPath:indexPath];
     
-    if (indexPath.row == 0) {
+    if (_showCameraOnFirstItem && indexPath.row == 0) {
         [cell.picBtn setImage:[UIImage imageNamed:@"sc_cam_h"] forState:UIControlStateNormal];
         cell.backgroundColor = [UIColor lightGrayColor];
         return cell;
     }
     cell.backgroundColor = [UIColor blackColor];
-    [cell fillDataWithAsset:_assets[indexPath.row - 1]];
+    if ([_delegate respondsToSelector:@selector(scImagePicker:itemForIndexPath:)]) {
+        UIImage *aImage = [_delegate scImagePicker:self itemForIndexPath:indexPath];
+        [cell fillData:aImage];
+    } else {
+        [cell fillData:_assets[indexPath.row - (_showCameraOnFirstItem ? 1 : 0)]];
+    }
     return cell;
 }
 
@@ -416,14 +429,14 @@ static NSString *albumCellId = @"albumCellId";
 }
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
-    if (indexPath.row == 0) {
+    if (_showCameraOnFirstItem && indexPath.row == 0) {
         [self showCamera];
         return;
     }
     
-    [SCImagePickerController requestAImageFromAsset:(PHAsset*)_assets[indexPath.row - 1] targetSize:CGSizeZero resultHandler:^(UIImage *result, NSDictionary *info) {
-        if ([_delegate respondsToSelector:@selector(scImagePicker:didSelectAImage:)]) {
-            [_delegate scImagePicker:self didSelectAImage:result];
+    [SCImagePickerController requestAImageFromAsset:(PHAsset*)_assets[indexPath.row - (_showCameraOnFirstItem ? 1 : 0)] targetSize:CGSizeZero resultHandler:^(UIImage *result, NSDictionary *info) {
+        if ([_delegate respondsToSelector:@selector(scImagePicker:didSelectAImage:info:)]) {
+            [_delegate scImagePicker:self didSelectAImage:result info:@{@"collection": _albumsArr[_currAlbumIndex], @"asset": _assets[indexPath.row - (_showCameraOnFirstItem ? 1 : 0)]}];
         }
     }];
 }

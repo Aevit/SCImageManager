@@ -59,16 +59,21 @@
     [super prepareForReuse];
 }
 
-- (void)fillDataWithAsset:(PHAsset*)asset {
+- (void)fillData:(id)info {
     
-    if (!asset) {
+    if (!info) {
         return;
     }
     
-    CGFloat imageWidth = [UIScreen mainScreen].scale * _picBtn.frame.size.width;
-    [SCImagePickerController requestAImageFromAsset:asset targetSize:CGSizeMake(imageWidth, imageWidth) resultHandler:^(UIImage *result, NSDictionary *info) {
-        [_picBtn setImage:result forState:UIControlStateNormal];
-    }];
+    if ([info isKindOfClass:[PHAsset class]]) {
+        PHAsset *asset = (PHAsset*)info;
+        CGFloat imageWidth = [UIScreen mainScreen].scale * _picBtn.frame.size.width;
+        [SCImagePickerController requestAImageFromAsset:asset targetSize:CGSizeMake(imageWidth, imageWidth) resultHandler:^(UIImage *result, NSDictionary *info) {
+            [_picBtn setImage:result forState:UIControlStateNormal];
+        }];
+    } else if ([info isKindOfClass:[UIImage class]]) {
+        [_picBtn setImage:(UIImage*)info forState:UIControlStateNormal];
+    }
 }
 
 @end
